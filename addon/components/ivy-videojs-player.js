@@ -116,7 +116,6 @@ export default Ember.Component.extend({
       // Solves issue where dynamically changing the video src
       // does not stop currently playing audio in Safari.
       this.on('didUpdateAttrs', function() {
-        console.log('didUpdateAttrs');
         player.reset();
       });
 
